@@ -13,7 +13,7 @@ from database.db import db
 from TechVJ.strings import HELP_TXT
 
 class batch_temp(object):
-    IS_BATCH = {}
+    IS_BATCH = {} 
 
 async def downstatus(client, statusfile, message, chat):
     while True:
@@ -61,10 +61,10 @@ async def send_start(client: Client, message: Message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
     buttons = [[
-        InlineKeyboardButton("❣️ Developer", url = "https://t.me/kingvj01")
+        InlineKeyboardButton("❣️ Developer", url = "https://t.me/+DBGKK90Ekm84NTA1")
     ],[
-        InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/vj_bot_disscussion'),
-        InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/vj_botz')
+        InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/h416ck'),
+        InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+JZt-BHL9kOg0ZGM1hm')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
